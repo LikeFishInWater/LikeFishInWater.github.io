@@ -88,11 +88,22 @@
 <p>下载并安装Node.js，此处我建议安装完毕后重启电脑，因为我当初安装完没重启，结果后面使用命令安装hexo的时候，提示无效的命令，因此推荐重启。当然，你也可以选择等到后面遇到问题，再选择重启。</p>
 <p>安装前先介绍几个hexo常用的命令,#后面为注释。</p>
 <p>1 $ hexo g #完整命令为hexo generate,用于生成静态文件<br>2 $ hexo s #完整命令为hexo server,用于启动服务器，主要用来本地预览<br>3 $ hexo d #完整命令为hexo deploy,用于将本地文件发布到github上<br>4 $ hexo n #完整命令为hexo new,用于新建一篇文章</p>
+<p>鼠标右键任意地方，选择Git Bash，使用以下命令安装hexo(ps：以下命令中的$符号只为了让教程和实际看起来一致，实际输入命令只需输入$ 后面的命令即可)</p>
+<p>1 $ npm install hexo-cli -g</p>
+<p>如果之后在使用的过程中，遇到以下的错误</p>
+<p>1 ERROR Deployer not found : github</p>
+<p>则运行以下命令,或者你直接先运行这个命令更好。</p>
+<p>1 $ npm install hexo-deployer-git –save<br>2 $ hexo g<br>3 $ hexo d</p>
+<p>接下来创建放置博客文件的文件夹：hexo文件夹。在自己想要的位置创建文件夹，如我hexo文件夹的位置为E:\hexo，名字和地方可以自由选择，当然最好不要放在中文路径下，至于原因，我想很多人懂得。<br>之后进入文件夹，即E:\hexo内，点击鼠标右键，选择Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站所需的所有文件。</p>
+<p>1 $ hexo init<br>安装依赖包</p>
+<p>1 $ npm install<br>让我们看看刚刚下载的hexo文件带来了什么，在E:\hexo内执行以下命令，</p>
+<p>1 $ hexo g<br>2 $ hexo s</p>
+<p>然后用浏览器访问<a href="http://localhost:4000/，此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。轻轻松松就看到了一点成果，是不是很激动，" target="_blank" rel="external">http://localhost:4000/，此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。轻轻松松就看到了一点成果，是不是很激动，</a><br>这就是hexo的强大之处，这个本地预览的功能，我真是爱不释手。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/04/使用hexo搭建个人博客/" data-id="ciq7d73f90002icwimi9venj8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/04/使用hexo搭建个人博客/" data-id="ciq7dc7380001l0wir4ia2mar" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/03/first-post/" data-id="ciq7d73ey0000icwi7f9bxaga" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/03/first-post/" data-id="ciq7dc7310000l0wiq0f9fw2v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -173,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/03/hello-world/" data-id="ciq7d73f50001icwiwqwwajfb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/03/hello-world/" data-id="ciq7dc73d0002l0wiykg9sjb8" class="article-share-link">Share</a>
       
       
     </footer>
