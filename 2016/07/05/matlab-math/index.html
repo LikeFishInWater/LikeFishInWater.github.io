@@ -5,24 +5,38 @@
   
   <title>matlab math | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="《数值分析方法与实验：基于matlab实现》多项式求值
+  <meta name="description" content="《数值分析方法与实验：基于matlab实现》polyval:多项式求值
+conv:多项式乘法
+deconv:多项式除法
+polyder:多项式求导
+[V,D]=eig(A):矩阵A的特征值和特征向量
+poly(A):矩阵A的特征多项式
+trapz：梯形公式求积分
+quad：辛普森公式求积分
+多项式求值
 多项式四则运算和求导运算
 矩阵A的特征值和特征向量
 矩阵积分1矩形积分公式
 2梯形积分公式
-3辛普森公式
-4程序">
+3辛">
 <meta property="og:type" content="article">
 <meta property="og:title" content="matlab math">
 <meta property="og:url" content="http://yoursite.com/2016/07/05/matlab-math/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="《数值分析方法与实验：基于matlab实现》多项式求值
+<meta property="og:description" content="《数值分析方法与实验：基于matlab实现》polyval:多项式求值
+conv:多项式乘法
+deconv:多项式除法
+polyder:多项式求导
+[V,D]=eig(A):矩阵A的特征值和特征向量
+poly(A):矩阵A的特征多项式
+trapz：梯形公式求积分
+quad：辛普森公式求积分
+多项式求值
 多项式四则运算和求导运算
 矩阵A的特征值和特征向量
 矩阵积分1矩形积分公式
 2梯形积分公式
-3辛普森公式
-4程序">
+3辛">
 <meta property="og:image" content="http://i4.piimg.com/567571/6b09947eb8731c0d.png">
 <meta property="og:image" content="http://i4.piimg.com/567571/9924ec10e6e9b476.png">
 <meta property="og:image" content="http://i2.piimg.com/567571/d43cab233a14d6e2.png">
@@ -30,16 +44,23 @@
 <meta property="og:image" content="http://i2.piimg.com/567571/b27150887068e46b.png">
 <meta property="og:image" content="http://i2.piimg.com/567571/926cc00199a60e47.png">
 <meta property="og:image" content="http://i2.piimg.com/567571/a7f856f63cb4bab9.png">
-<meta property="og:updated_time" content="2016-07-05T08:43:32.346Z">
+<meta property="og:updated_time" content="2016-07-05T13:33:49.452Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="matlab math">
-<meta name="twitter:description" content="《数值分析方法与实验：基于matlab实现》多项式求值
+<meta name="twitter:description" content="《数值分析方法与实验：基于matlab实现》polyval:多项式求值
+conv:多项式乘法
+deconv:多项式除法
+polyder:多项式求导
+[V,D]=eig(A):矩阵A的特征值和特征向量
+poly(A):矩阵A的特征多项式
+trapz：梯形公式求积分
+quad：辛普森公式求积分
+多项式求值
 多项式四则运算和求导运算
 矩阵A的特征值和特征向量
 矩阵积分1矩形积分公式
 2梯形积分公式
-3辛普森公式
-4程序">
+3辛">
 <meta name="twitter:image" content="http://i4.piimg.com/567571/6b09947eb8731c0d.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -78,9 +99,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -111,7 +132,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="《数值分析方法与实验：基于matlab实现》"><a href="#《数值分析方法与实验：基于matlab实现》" class="headerlink" title="《数值分析方法与实验：基于matlab实现》"></a>《数值分析方法与实验：基于matlab实现》</h1><h4 id="多项式求值"><a href="#多项式求值" class="headerlink" title="多项式求值"></a>多项式求值</h4><p><img src="http://i4.piimg.com/567571/6b09947eb8731c0d.png" alt=""></p>
+        <h1 id="《数值分析方法与实验：基于matlab实现》"><a href="#《数值分析方法与实验：基于matlab实现》" class="headerlink" title="《数值分析方法与实验：基于matlab实现》"></a>《数值分析方法与实验：基于matlab实现》</h1><p>polyval:多项式求值</p>
+<p>conv:多项式乘法</p>
+<p>deconv:多项式除法</p>
+<p>polyder:多项式求导</p>
+<p>[V,D]=eig(A):矩阵A的特征值和特征向量</p>
+<p>poly(A):矩阵A的特征多项式</p>
+<p>trapz：梯形公式求积分</p>
+<p>quad：辛普森公式求积分</p>
+<h4 id="多项式求值"><a href="#多项式求值" class="headerlink" title="多项式求值"></a>多项式求值</h4><p><img src="http://i4.piimg.com/567571/6b09947eb8731c0d.png" alt=""></p>
 <h4 id="多项式四则运算和求导运算"><a href="#多项式四则运算和求导运算" class="headerlink" title="多项式四则运算和求导运算"></a>多项式四则运算和求导运算</h4><p><img src="http://i4.piimg.com/567571/9924ec10e6e9b476.png" alt=""></p>
 <h4 id="矩阵A的特征值和特征向量"><a href="#矩阵A的特征值和特征向量" class="headerlink" title="矩阵A的特征值和特征向量"></a>矩阵A的特征值和特征向量</h4><p><img src="http://i2.piimg.com/567571/d43cab233a14d6e2.png" alt=""></p>
 <h4 id="矩阵积分"><a href="#矩阵积分" class="headerlink" title="矩阵积分"></a>矩阵积分</h4><h5 id="1矩形积分公式"><a href="#1矩形积分公式" class="headerlink" title="1矩形积分公式"></a>1矩形积分公式</h5><p><img src="http://i2.piimg.com/567571/baa77eaac3c15669.png" alt=""></p>
@@ -122,7 +151,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/05/matlab-math/" data-id="ciq97l09h0003sowiru9ohvni" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/05/matlab-math/" data-id="ciqashk9u0003vswi5ffbp2ns" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -133,7 +162,7 @@
   
   
     <a href="/2016/07/04/get-start/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">get start</div>
     </a>
   
@@ -166,7 +195,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -203,7 +232,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
