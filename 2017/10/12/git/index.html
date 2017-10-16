@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>git | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="（参考廖雪峰的官方网站）
+ref
+常用命令
+创建本地版本库
+创建空目录
+git init远程版本库
+SSH key
+
+第一次：
+git remote add origin git@github.com:myid/myrepos.git
+git push -u origin master
+以后：
+git push origin master
+克隆远程库git clone git@github.com">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git">
+<meta property="og:url" content="http://yoursite.com/2017/10/12/git/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="（参考廖雪峰的官方网站）
+ref
+常用命令
+创建本地版本库
+创建空目录
+git init远程版本库
+SSH key
+
+第一次：
+git remote add origin git@github.com:myid/myrepos.git
+git push -u origin master
+以后：
+git push origin master
+克隆远程库git clone git@github.com">
+<meta property="og:updated_time" content="2017-10-16T05:18:08.803Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git">
+<meta name="twitter:description" content="（参考廖雪峰的官方网站）
+ref
+常用命令
+创建本地版本库
+创建空目录
+git init远程版本库
+SSH key
+
+第一次：
+git remote add origin git@github.com:myid/myrepos.git
+git push -u origin master
+以后：
+git push origin master
+克隆远程库git clone git@github.com">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/12/git/" class="article-date">
+  <time datetime="2017-10-11T16:00:00.000Z" itemprop="datePublished">2017-10-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>（参考<a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">廖雪峰的官方网站</a>）</p>
+<p><a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">ref</a></p>
+<p><a href="http://www.cnblogs.com/cspku/articles/Git_cmds.html" target="_blank" rel="external">常用命令</a></p>
+<h2 id="创建本地版本库"><a href="#创建本地版本库" class="headerlink" title="创建本地版本库"></a>创建本地版本库</h2><ul>
+<li>创建空目录</li>
+<li>git init<h2 id="远程版本库"><a href="#远程版本库" class="headerlink" title="远程版本库"></a>远程版本库</h2></li>
+<li>SSH key</li>
+</ul>
+<p>第一次：</p>
+<pre><code>git remote add origin git@github.com:myid/myrepos.git
+git push -u origin master
+</code></pre><p>以后：</p>
+<pre><code>git push origin master
+</code></pre><h2 id="克隆远程库"><a href="#克隆远程库" class="headerlink" title="克隆远程库"></a>克隆远程库</h2><pre><code>git clone git@github.com:id/repos.git
+</code></pre><p>到repos目录</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="本地提交："><a href="#本地提交：" class="headerlink" title="本地提交："></a>本地提交：</h3><pre><code>git add readme.txt
+git commit -m &quot;wrote a readme file&quot;
+</code></pre><h3 id="提交日志"><a href="#提交日志" class="headerlink" title="提交日志"></a>提交日志</h3><pre><code>git log
+</code></pre><p>在Git中，用HEAD表示当前版本，也就是最新的提交3628164…882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。</p>
+<h3 id="回退到上一版本"><a href="#回退到上一版本" class="headerlink" title="回退到上一版本"></a>回退到上一版本</h3><pre><code>git reset --hard HEAD^
+</code></pre><h3 id="回退到某一版本"><a href="#回退到某一版本" class="headerlink" title="回退到某一版本"></a>回退到某一版本</h3><pre><code>git reset --hard 3628164
+</code></pre><p>版本号（commit id）没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。</p>
+<h3 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h3><pre><code>cat readme.txt
+</code></pre><h3 id="记录你的每次命令"><a href="#记录你的每次命令" class="headerlink" title="记录你的每次命令"></a>记录你的每次命令</h3><pre><code>git reflog
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/12/git/" data-id="cj8tqbrv50001c8wimwwwdiht" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/24/python_tensorflow_机器学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">python_tensorflow_机器学习</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/10/12/git/">git</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/24/python_tensorflow_机器学习/">python_tensorflow_机器学习</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/15/content/">content</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/05/matlab-math/">matlab math</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/04/使用hexo搭建个人博客/">使用hexo搭建个人博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
